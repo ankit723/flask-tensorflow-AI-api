@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris API ID</title>
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <h1>IRIS AI</h1>
+            <ul>
+                <li class="list"><a href="/" id="home" class="current">Home</a></li>
+                <li class="list"><a href="#" id="iris" >Iris</a></li>
+                <li class="list"><a href="#" id="Kelvin" >Kelvin</a></li>
+                <li class="list"><a href="#" id="blog" >Blog</a></li>
+                <li class="list"><a href="#" id="support" >Support</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="/signup">Free Sign Up</a></li>
+                <li><a href="/">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="signcontainer">
+        <h1 class="heading">API Checker</h1>
+        <h2 class="heading2">Check you API ID In a Single Click</h2>
+        <form action="/apiroutechecker" method="POST">
+            <label for="email">email:</label><br>
+            <input type="email" name="email" id="email" placeholder="Enter Your email", required="required"><br>
+            <label for="Password">Password:</label><br>
+            <input type="password" name="password" id="password" placeholder="Enter Password", required="required"><br>
+            <input type="submit" value="Check API Route" class="submit">
+        </form>
+
+        {{api}}
+    </div>
+
+    <!-- Footer -->
+
+  <!-- Footer -->
+</body>
+
+</html>

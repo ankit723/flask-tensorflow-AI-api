@@ -1,0 +1,227 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(247 239 239);
+    background-image: url("/static/bg_blue.jpg");
+    background-repeat: no-repeat;
+    background-attachment:  fixed;
+    font-family: 'varela round';
+    scrollbar-color:blueviolet;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left,
+.right{
+    display: flex;
+    margin-top: -1.3rem;
+    margin-left: -0.5rem;
+}
+
+
+
+.left h1{
+    font-size: 2.2rem;
+    margin-left: 2.1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:normal;
+    letter-spacing: 3.8px;
+    color:white;
+}
+
+.left ul,
+.right ul{
+    display: flex;
+    list-style: none;   
+    margin-top: 2.5rem;
+    margin-left: -1.5rem;
+}
+
+.left ul li,
+.right ul li{
+    margin: 0.2rem;
+    font-family: sans-serif; 
+}
+
+
+
+.left ul li a,
+.right ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1rem;
+    font-weight: normal;
+    padding: 0.6rem;
+    transition: 0.3s;
+    letter-spacing: 1.2px;
+}
+
+.left ul li a:hover{
+    color: rgb(236, 156, 156);
+}
+
+.right ul{
+    margin-right: 2.5rem;
+}
+.right ul li a{
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-weight: 500;
+    border: 2px solid rgb(236, 156, 156);
+}
+
+.right ul li a:hover{
+    background-color: rgb(236, 156, 156);
+    color: black;
+}
+
+.current::after{
+    content: "";
+    display: block;
+    background-color: rgb(236, 156, 156);
+    width: 5rem;
+    height: 0.1rem;
+    margin-top: 0.5rem;
+    margin-left: 0rem;
+}
+
+.signcontainer{
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 23rem;
+    background-color: #dde2f3;
+    height: 40rem ;
+    width: 60rem;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 44px 20px black;;
+}
+
+.heading, .heading3, #productions{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "varela Round";
+    font-weight: normal;
+    font-size:3rem;
+    letter-spacing: 4px;
+    margin-top: 2rem;
+}
+
+.heading2{
+    margin-top: -2rem;
+    font-weight:lighter;
+}
+
+.firsthead{
+    margin-top: 12rem;
+}
+
+.heading3, #productions, .para_about{
+    color: #e1e1e1;
+    margin-left: 6rem;
+    margin-top: 10rem;
+}
+
+#productions{
+    font-size: 0.8rem;
+    margin-top: -2.5rem;
+    margin-left: 23rem;
+}
+
+.para_about{
+    font-size: 1.7rem;
+    margin-top: 1.8rem;
+
+}
+
+.secondpage{
+    margin-top: 12rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #dde2f3;
+}
+
+.secondpage_heading{
+    font-size: 3rem;
+}
+.secondpage_heading::after{
+    content: "";
+    display: block;
+    background-color: rgb(236, 156, 156);
+    width: 20rem;
+    height: 0.1rem;
+    margin-top: 0.5rem;
+    margin-left: 42rem;
+}
+
+.secondpage_heading2{
+    /* margin-right: 75rem; */
+    margin-top: 8rem;
+    font-size: 2rem;
+}
+
+.secondpage_heading2::after{
+    content: "";
+    display: block;
+    background-color: rgb(236, 156, 156);
+    width: 20rem;
+    height: 0.1rem;
+    margin-top: 0.5rem;
+    margin-left: 42rem;
+}
+
+.createaccount_para{
+    /* margin-right: 35rem; */
+    font-size: 1.3rem;
+}
+
+
+.tryout_btn{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1rem;
+    font-weight: normal;
+    transition: 0.3s;
+    letter-spacing: 1.2px;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-weight: 500;
+    border: 2px solid rgb(236, 156, 156);
+}
+.tryout_btn:hover{
+    background-color: rgb(236, 156, 156);
+    color: black;
+}
+
+label{
+    margin-right: 45rem;
+    margin-top: 2rem;
+}
+
+input{
+    width: 50rem;
+    height: 2rem;
+    border-radius:8px;
+    border: 2px solid rgb(236, 156, 156);
+    margin-bottom: 2rem;
+    background-color: rgb(240, 207, 207);
+}
+
+.submit{
+    transition: 0.3s;
+    width: 10rem;
+    height: 3rem;
+    background-color: rgba(236, 156, 156, 0.136);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: rgb(236, 156, 156);
+}

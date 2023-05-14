@@ -1,6 +1,7 @@
 import random
 import json
-import pickle
+import pickle 
+from log import create_logs
 
 import numpy as np
 import nltk
@@ -41,7 +42,7 @@ def predict_class(sentence):
     
     return return_list
 
-def respond(query, intent_json=intents):
+def respond(query, username, intent_json=intents):
     try:
         intent_list = predict_class(query)
         tag = intent_list[0]['intent']
@@ -65,12 +66,16 @@ def respond(query, intent_json=intents):
                         "is_settings": is_setting,
                         "setting_value": setting_value
                     }
+        log=(query, result, "NA", username)
+        create_logs(log)
         return json_api
-    except IndexError:
+    except Exception as e:
+        log=(query, "NA", format(e), username)
+        create_logs(log)
         res_main()
 
-def res_main(data):
-    return(respond(data))
+def res_main(data, username):
+    return(respond(data, username))
 
 if __name__ == "__main__":
-    res_main('hey')
+    print(res_main(input("you: "), "admin_adminrootmaster"))
